@@ -1,0 +1,60 @@
+name: Feature Request
+description: Propose a new skill or skill improvement for Anthale Agent Skills.
+labels: [enhancement, triage]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion.
+
+        The most useful requests explain the workflow to support, the security or quality problem to address, and the shape of the guidance that should exist in the skill.
+
+  - type: dropdown
+    id: request_type
+    validations:
+      required: true
+    attributes:
+      label: Request type
+      options:
+        - New skill
+        - Improvement to an existing skill
+        - Repository tooling or validation improvement
+        - Documentation improvement
+
+  - type: input
+    id: skill_name
+    attributes:
+      label: Skill name
+      description: If this relates to an existing or proposed skill, provide the skill name.
+      placeholder: prompt_injection_prevention
+
+  - type: textarea
+    id: use_case
+    validations:
+      required: true
+    attributes:
+      label: Use case
+      description: Describe the user workflow or review task this should support.
+
+  - type: textarea
+    id: problem
+    validations:
+      required: true
+    attributes:
+      label: Problem to solve
+      description: What security, safety, or developer-quality problem should this skill address?
+
+  - type: textarea
+    id: proposal
+    validations:
+      required: true
+    attributes:
+      label: Proposed solution
+      description: Describe the new guidance, structure, or activation behavior you want to see.
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success criteria
+      description: How should we know this request is complete and useful?

@@ -1,0 +1,56 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in Anthale Agent Skills.
+labels: [bug, triage]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        Please include enough detail for us to reproduce the issue in the relevant skill or activation flow.
+
+  - type: input
+    id: skill_name
+    attributes:
+      label: Affected skill
+      description: Which skill is affected?
+      placeholder: prompt_injection_prevention
+
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: Description
+      description: Describe the current behavior and why it is incorrect.
+
+  - type: textarea
+    id: reproduce
+    validations:
+      required: true
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal, reproducible set of steps or prompts.
+      placeholder: |
+        1. Activate the skill with this task or prompt
+        2. Observe this behavior
+        3. Compare it with the expected behavior
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe the behavior you expected to see.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Agent or framework context
+      description: Include any agent runtime, model, framework, or repository context that matters.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Include any relevant output, screenshots, or traces.
