@@ -15,7 +15,7 @@ body:
     attributes:
       label: Affected skill
       description: Which skill is affected?
-      placeholder: prompt_injection_prevention
+      placeholder: prompt-injection-hardening
 
   - type: textarea
     id: description

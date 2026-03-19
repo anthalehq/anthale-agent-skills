@@ -27,7 +27,7 @@ body:
     attributes:
       label: Skill name
       description: If this relates to an existing or proposed skill, provide the skill name.
-      placeholder: prompt_injection_prevention
+      placeholder: prompt-injection-hardening
 
   - type: textarea
     id: use_case

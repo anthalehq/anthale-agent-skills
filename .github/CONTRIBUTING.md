@@ -48,7 +48,7 @@ make test
 
 ```bash
 git add .
-git commit -m "feat(prompt_injection_prevention): expand MCP review guidance"
+git commit -m "feat(prompt-injection-hardening): expand MCP review guidance"
 ```
 
 9. Push your branch and open a pull request using the repository template.
@@ -65,7 +65,7 @@ git commit -m "feat(prompt_injection_prevention): expand MCP review guidance"
 This repository follows [Conventional Commits](https://www.conventionalcommits.org).
 
 - Use a clear type such as `feat`, `fix`, `docs`, `refactor`, `test`, `build`, `ci`, or `security`.
-- Use a scope when it helps identify the affected skill or repository area, for example `feat(prompt_injection_prevention): add memory poisoning checklist`.
+- Use a scope when it helps identify the affected skill or repository area, for example `feat(prompt-injection-hardening): add memory poisoning checklist`.
 - Write the description in the imperative mood, for example `add`, `update`, or `fix`.
 - Mark incompatible behavior changes with `!` or a `BREAKING CHANGE:` note in the commit body.
 
