@@ -12,6 +12,12 @@ Add the skills package with:
 npx skills add anthalehq/anthale-agent-skills
 ```
 
+Install only the `prompt-injection-hardening` skill with:
+
+```bash
+npx skills add anthalehq/anthale-agent-skills --skill prompt-injection-hardening
+```
+
 ## Available skills
 
 Use this table as the canonical catalog. Add one row per skill.
